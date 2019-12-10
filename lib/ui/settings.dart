@@ -56,16 +56,6 @@ class SettingsPageState extends State<SettingsPage> {
     Widget _changeThemeWidget(ChangeThemeState state) => Container(
           height: 100,
           width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
-              gradient: new LinearGradient(
-                  colors: [
-                    state.themeData.backgroundColor,
-                    state.themeData.scaffoldBackgroundColor
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  stops: [0.0, 1.0],
-                  tileMode: TileMode.clamp)),
           child: Padding(
             padding: const EdgeInsets.symmetric(
               vertical: 8,
